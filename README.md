@@ -1,4 +1,4 @@
 # CounselorBot
 
 
-This is a project for Hack TX. 
+This is a project for Hack TX. NodeJS, ExpressJS, MongoDB.
