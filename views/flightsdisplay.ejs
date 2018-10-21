@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flights</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .card {
+            transition: 0.3s;
+            width: 40%;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Flights</h2>
+
+    <ul>
+        <%data.forEach(function(item){%>
+            <li>
+                <div class="card">
+                    <div class="container">
+                        <h4><b><%=item.origin%> &#8594; <%=item.destination%></b></h4>
+                        <p>Date: <%=item.departureTime%></p>
+                        <p>Price: $<%=item.cost%></p>
+                    </div>
+                </div>
+            </li>
+        <%});%>
+    </ul>
+</body>
+
+</html>
